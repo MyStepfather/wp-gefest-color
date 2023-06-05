@@ -1,0 +1,143 @@
+.price {
+    padding: 93px 0 71px;
+    background-color: $grey;
+    &__title {
+        position: relative;
+        width: 387px;
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 44px;
+        &::before {
+            content: "Прайс";
+            position: absolute;
+            top: -36px;
+            font-weight: 800;
+            font-size: 12px;
+            line-height: 17px;
+            text-transform: uppercase;
+            color: rgba(51, 51, 51, 0.3);
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            left: 60px;
+            top: -34px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: $green;
+        }
+    }
+    &__services {
+        margin-top: 34px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__item {
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;
+        align-items: stretch;
+        color: rgba(51, 51, 51, 0.4);
+        font-style: normal;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 18px;
+        &:hover {
+            .price__name {
+                background-color: #fff;
+                color: #333333;
+                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+            }
+            .price__cost {
+                background-color: $green;
+                color: #333333;
+                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+            }
+        }
+
+    }
+    &__name {
+        width: 100%;
+        max-width: 895px;
+        // min-height: 48px;
+        padding: 15px 10px 15px 146px;
+        margin-right: 20px;
+        display: flex;
+        align-items:center;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        transition: .2s;
+        cursor: pointer;
+/*         &--active {
+            background-color: #fff;
+            color: #333333;
+        } */
+    }
+    &__cost {
+        width: 100%;
+        max-width: 285px;
+        // height: 100%;
+        // min-height: 48px;
+        padding: 10px 0;
+        display: flex;
+        align-items:center;
+        padding-left: 45px;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        transition: .2s;
+        cursor: pointer;
+/*         &--active {
+            background-color: $green;
+            color: #333333;
+        } */
+    }
+}
+
+@media(max-width: 1010px) {
+    .price__name {
+        padding-left: 24px;
+        margin-right: 10px;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .price__cost {
+        max-width: 285px;
+        padding-left: 24px;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@media(max-width: 768px) {
+    .price__name {
+        padding-left: 24px;
+        margin-right: 10px;
+    }
+    .price__cost {
+        max-width: 156px;
+        padding-left: 24px;
+        padding-right: 10px;
+    }
+}
+
+@media(max-width: 560px) {
+    .price {
+        padding-top: 79px;
+        padding-bottom: 68px;
+    }
+    .price__name {
+        font-size: 13px;
+        margin-right: 0;
+        color: #333333;
+    }
+    .price__cost {
+        font-size: 13px;
+        color: #333333;
+        background-color: $green;
+
+    }
+}

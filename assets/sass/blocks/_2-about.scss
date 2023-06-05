@@ -1,0 +1,173 @@
+.about {
+    background-color: $grey;
+    padding: 98px 0 65px;
+    background-image: url('../../../assets/img/coloring_bg.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center bottom;
+    &__wrapper {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100%;
+    }
+}
+.about-header {
+/*     display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+    &__title {
+        position: relative;
+        width: 387px;
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 44px;
+        &::before {
+            content: "О компании";
+            position: absolute;
+            top: -36px;
+            font-weight: 800;
+            font-size: 12px;
+            line-height: 17px;
+            text-transform: uppercase;
+            color: rgba(51, 51, 51, 0.3);
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            left: 110px;
+            top: -34px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: $green;
+        }
+    }
+}
+
+.qualities {
+    width: 100%;
+    max-width: 692px;
+    display: flex;
+    flex-direction: column;
+    gap: 167px;
+    &__descr {
+        max-width: 692px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+        max-width: 100%;
+    }
+    &__item {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        max-width: 692px;
+        background: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(3px);
+        border-radius: 11px;
+        transition: 0.2s;
+        cursor: pointer;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-top: 50px solid $green;
+            border-right: 50px solid transparent;
+            transform: rotate(90deg);
+        }
+        &:hover {
+            background: #FFFFFF;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+            transition: 0.2s;
+        }
+    }
+    &__text {
+        padding: 33px 20px 27px 81px;
+        
+        h3 {
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 18px;
+        }
+        p {
+            margin-top: 14px;
+            max-width: 523px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+}
+
+.max-850 {
+    display: none;
+}
+
+@media(max-width: 1080px) {
+    .qualities {
+        gap: 60px;
+        font-size: 15px;
+    }
+    .qualities__text {
+        padding-left: 36px;
+    }
+    .about {
+        background-size: contain;
+    }
+}
+
+
+@media(max-width: 850px) {
+    .qualities__wrapper {
+        display: none;
+    }
+    .max-850 {
+        display: flex;
+        gap: 10px;
+        margin-top: 60px;
+
+    }
+}
+@media(max-width: 768px) {
+    .about-header__titlemax-width {
+        max-width: 219px;
+    }
+}
+
+@media(max-width: 650px) {
+    .about__wrapper {
+        flex-direction: column;
+        gap: 32px;
+    }
+    .max-850 {
+        margin-top: 32px;
+    }
+    .about-header__title {
+        width: 100%;
+        line-height: 30px;
+        font-size: 24px;
+    }
+    .qualities__descr {
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .qualities__text p {
+        font-size: 15px;
+        line-height: 18px;
+    }
+}
+
+@media(max-width: 650px) {
+    .about {
+        padding: 79px 0 141px;
+    }
+}

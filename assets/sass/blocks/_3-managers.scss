@@ -1,0 +1,112 @@
+.managers {
+    padding: 66px 0 60px 0;
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+}
+.swiper-slide.manager {
+    height: unset !important;
+}
+
+.manager {
+    display: flex;
+    flex-direction: column;
+    padding: 44px 30px 50px 30px;
+    width: calc(33% - 40px) ;
+    // max-width: 387px;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 20px;
+    transition: 0.2s;
+    // cursor: pointer;
+    &:hover {
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+        transition: 0.2s;
+    }
+    &-upper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__photo {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        &__name {
+            margin-top: 21px;
+            font-weight: 800;
+            font-size: 14px;
+            line-height: 18px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        &__post {
+            margin-top: 8px;
+            font-weight: 800;
+            font-size: 14px;
+            line-height: 18px;
+            color: rgba(51, 51, 51, 0.4);
+            font-variant-ligatures: none;
+            text-align: center;
+            // text-transform: lowercase;
+        }
+    }
+    &-downer {
+        margin-top: 34px;
+        text-align: center;
+        &__info {
+            font-weight: 300;
+        }
+    }
+}
+.managers-slider {
+    position: relative;
+}
+
+.swiper-pagination.managers-pagination {
+    display: none;
+}
+@media(max-width: 768px) {
+    
+    .swiper-pagination.managers-pagination {
+        top: unset !important;
+        bottom: -35px !important;
+        display: block;
+    }
+    .swiper-pagination-bullet-active {
+        background: $green !important;
+    }
+}
+
+@media(max-width: 962px) {
+    .manager {
+        padding: 23px 10px 40px; 
+    }
+    .manager-downer {
+        margin-top: 24px;
+    }
+    .manager-downer__info {
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 24px;
+    }
+}
+
+@media(max-width: 600px) {
+    .manager-downer__info {
+        font-weight: 400;
+    }
+    .manager-downer {
+        margin-top: 20px;
+    }
+}
+
+@media(max-width: 340px) {
+    .managers {
+        padding: 50px 0;
+    }
+}

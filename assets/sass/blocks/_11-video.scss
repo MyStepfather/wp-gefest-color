@@ -1,0 +1,52 @@
+.video {
+    height: 100%;
+    max-height: fit-content;
+    padding: 119px 0 105px;
+    &__title {
+        position: relative;
+        width: 387px;
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 44px;
+        &::before {
+            content: "Видео";
+            position: absolute;
+            top: -44px;
+            font-weight: 800;
+            font-size: 12px;
+            line-height: 17px;
+            text-transform: uppercase;
+            color: rgba(51, 51, 51, 0.3);
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            left: 70px;
+            top: -42px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: $green;
+        }
+    }
+    &__container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; /* соотношение сторон 16:9 */
+    }
+    &__content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+    }
+}
+
+@media(max-width: 768px) {
+    .video {
+        padding: 73px 0 54px 0;
+    }
+}

@@ -1,0 +1,104 @@
+/* Скрытие элементов */
+@media(max-width: 767px) {
+    .mob-hidden {
+        display: none !important;
+    }
+}
+
+@media(min-width: 768px) {
+    .tablet-desc-hidden {
+        display: none !important;
+    }
+}
+
+/* @media(min-width: 701px) {
+    .mw-700 {
+        display: none !important;
+    }
+} */
+
+// обертка
+.container {
+    width: calc(100% - 128px);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+/*     &--none {
+        width: unset;
+    } */
+}
+
+@media(max-width: 767px) {
+    .container {
+        width: calc(100% - 34px);
+    }
+}
+
+// вращение
+.rotate {
+    animation: rotate 2s infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+// появление модалок
+.show {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+// .scrollbar { overflow-y: scroll; scrollbar-width: none !important; -ms-overflow-style: none; }
+
+// .scrollbar::-webkit-scrollbar-thumb { background-color: #888; border-radius: 10px; display: none; }
+
+.scrollbar {
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.mw-768 {
+    display: none;
+}
+@media(max-width: 650px) {
+    .mob-hidden-650 {
+        display: none !important;
+    }
+}
+@media(min-width: 650px) {
+    .desc-hidden-650 {
+        display: none !important;
+    }
+}
+.overflow-y-hidden {
+    overflow: hidden;
+    // position: fixed;
+    // height: 100vh;
+}
+
+.none {
+    display: none;
+}
+
+.span-green {
+    color: $green;
+    font-weight: 800;
+}
+
+@media(max-width: 540px) {
+    .not-for-mob {
+        display: none;
+    }
+}

@@ -1,0 +1,6 @@
+<svg class="sec-slider-svg" width="38" height="45" viewBox="0 0 38 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M25.75 1V10C25.75 10.5967 25.9871 11.169 26.409 11.591C26.831 12.0129 27.4033 12.25 28 12.25H37" stroke="currentColor" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.5 12.25V5.5C5.5 4.30653 5.97411 3.16193 6.81802 2.31802C7.66193 1.47411 8.80653 1 10 1H25.75L37 12.25V37C37 38.1935 36.5259 39.3381 35.682 40.182C34.8381 41.0259 33.6935 41.5 32.5 41.5H21.25" stroke="currentColor" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.75 32.5C11.4779 32.5 14.5 29.4779 14.5 25.75C14.5 22.0221 11.4779 19 7.75 19C4.02208 19 1 22.0221 1 25.75C1 29.4779 4.02208 32.5 7.75 32.5Z" stroke="currentColor" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.375 32.5L1 43.75L7.75 40.375L14.5 43.75L11.125 32.5" stroke="currentColor" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

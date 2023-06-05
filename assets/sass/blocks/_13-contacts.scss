@@ -1,0 +1,110 @@
+.contacts {
+    padding: 92px 0 60px;
+    
+    &__title {
+        position: relative;
+        width: 387px;
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 44px;
+        &::before {
+            content: "Контакты";
+            position: absolute;
+            top: -44px;
+            font-weight: 800;
+            font-size: 12px;
+            line-height: 17px;
+            text-transform: uppercase;
+            color: rgba(51, 51, 51, 0.3);
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            left: 90px;
+            top: -42px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: $green;
+        }
+    }
+    &__inner {
+        display: flex;
+        flex-direction: row;
+        // justify-content: space-between;
+
+    }
+    &__data {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding-right: 20px;
+    }
+    &__items {
+        display: flex;
+        flex-direction: column;
+        gap: 34px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        gap: 34px;
+        &:hover {
+            .contacts__descr {
+                font-weight: 800;
+            }
+        }
+    }
+    &__descr {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 18px;
+        transition: .2s;
+
+    }
+    &__map {
+        width: 100%;
+        
+    }
+}
+#map {
+    border-radius: 20px;
+}
+
+
+@media(max-width: 1050px) {
+    .contacts__inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 34px;
+        height: 700px;
+    }
+    .contacts__item {
+        gap: 20px;
+    }
+    .contacts__map {
+        height: 100%;
+        max-height: 378px;
+    }
+
+}
+
+@media(max-width: 550px) {
+    .contacts {
+        padding: 72px 0 40px;
+    }
+    .contacts__descr {
+        font-size: 15px;
+    }
+    .contacts__title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .contacts__data {
+        width: 100%;
+    }
+    .footer__btn-form {
+        margin-top: 15px;
+    }
+}

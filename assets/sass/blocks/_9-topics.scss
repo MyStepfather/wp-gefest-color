@@ -1,0 +1,114 @@
+.topics {
+    padding: 120px 0 0px 0;
+    position: relative;
+    &__container {
+        overflow: hidden;
+        position: relative;
+        padding: 20px 20px;
+        margin: 0 -20px;
+    }
+    &__slide {
+        width: 387px;
+    }
+    .swiper-button-next, .swiper-rtl .swiper-button-prev {
+        right: var(--swiper-navigation-sides-offset,10px);
+    }
+    .swiper-button-prev, .swiper-rtl .swiper-button-next {
+        left: var(--swiper-navigation-sides-offset,10px);
+    }
+    &__title {
+        position: relative;
+        width: 100%;
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 44px;
+        
+        &::before {
+            content: "Статьи";
+            position: absolute;
+            top: -44px;
+            font-weight: 800;
+            font-size: 12px;
+            line-height: 17px;
+            text-transform: uppercase;
+            color: rgba(51, 51, 51, 0.3);
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            left: 70px;
+            top: -42px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: $green;
+        }
+    }
+}
+.topic {
+    padding: 10px 0 0 0;
+    width: 100%;
+    max-width: 387px;
+    height: unset !important;
+    border-radius: 20px;
+    transition: .2s;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    display: flex !important;
+    align-items: stretch;
+    &:hover {
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+        transition: .2s;
+        background: #FFFFFF;
+    }
+    &__inner {
+        height: 100%;
+        // width: 387px;
+        padding: 44px 44px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        
+
+    }
+    &__upper {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    &__title {
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: #333333;
+    }
+    &__descr {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 28px;
+        color: #333333;
+    }
+    &__btn {
+        margin-top: 30px;
+        padding: 12px 26px;
+        display: flex;
+    }
+}
+
+@media(max-width: 768px) {
+    .topics {
+        padding: 83px 0 84px 0;
+    }
+    .topics__buttons-wrapper {
+        right: 50% !important;
+        transform: translateX(50%);
+        bottom: 45px !important;
+    }
+    .topic {
+        max-width: unset;
+    }
+    .topic__btn {
+        margin-top: 20px;
+    }
+}

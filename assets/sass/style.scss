@@ -1,0 +1,63 @@
+@import 'reset';
+@import 'vars';
+@import 'buttons';
+@import 'common';
+// @import '../fonts/stylesheet.css';
+@import 'blocks/header';
+@import 'blocks/footer';
+@import 'blocks/1-promo';
+@import 'blocks/2-about';
+@import 'blocks/3-managers';
+@import 'blocks/4-sale';
+@import 'blocks/5-services';
+@import 'blocks/6-price';
+@import 'blocks/7-reasons';
+@import 'blocks/8-reviews';
+@import 'blocks/9-topics';
+@import 'blocks/10-clients';
+@import 'blocks/11-video';
+@import 'blocks/12-gallery';
+@import 'blocks/13-contacts';
+@import 'blocks/footer';
+@import 'modals';
+@import 'forms';
+@import 'articles';
+@import 'particles';
+
+/* .for-safari {
+    position:relative;
+    overflow-x:hidden;
+} */
+
+
+body {
+    font-family: 'Rubik';
+    background-color: #FAFAFA;
+    font-size: 16px;
+    width: 100vw;
+    max-width: 100vw;
+
+    // position:relative;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    outline: none;
+    font-variant-ligatures: none;
+}
+
+@media(max-width: 560px) {
+    .about-header__title,
+    .reasons__title,
+    .services__title,
+    .price__title {
+        font-size: 24px;
+        line-height: 30px;
+        width: unset;
+        width: 100%;
+    }
+}
+
+html {
+    // max-width: 100vw;
+    overflow-x: hidden;
+}
+
