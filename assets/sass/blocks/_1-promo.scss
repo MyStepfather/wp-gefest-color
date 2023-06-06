@@ -59,7 +59,7 @@
 .main-slider__button-prev,
 .main-slider__button-next {
     background-color: $green;
-    background-image: url('../../../assets/img/icons/arrow-left.svg');
+    // background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/icons/arrow-left.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;

@@ -590,6 +590,13 @@ img {
   color: #FFFFFF;
 }
 
+.footer-contacts__phone > a,
+.footer-contacts__email > a {
+  display: flex;
+  flex-direction: row;
+  gap: 31px;
+}
+
 .footer-social {
   display: flex;
   flex-direction: row;
@@ -768,7 +775,6 @@ img {
 .main-slider__button-prev,
 .main-slider__button-next {
   background-color: #BED730;
-  background-image: url("../../../assets/img/icons/arrow-left.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -913,7 +919,6 @@ img {
 .about {
   background-color: #F2F2F2;
   padding: 98px 0 65px;
-  background-image: url("../../../assets/img/coloring_bg.png");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center bottom;
@@ -1354,7 +1359,6 @@ img {
   height: 77px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.46);
-  background-image: url("../../../assets/img/icons/plus.svg");
   background-position: center center;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -1401,18 +1405,6 @@ img {
     justify-content: space-between;
     background-repeat: no-repeat;
     background-size: cover; /* Пока не дадут норм исходники, будет cover */
-  }
-  .swiper-slide.services-slide:nth-child(1) {
-    background-image: url("../../../assets/img/services_1_lap.png");
-  }
-  .swiper-slide.services-slide:nth-child(2) {
-    background-image: url("../../../assets/img/services_2_mob.png");
-  }
-  .swiper-slide.services-slide:nth-child(3) {
-    background-image: url("../../../assets/img/services_3_mob.png");
-  }
-  .swiper-slide.services-slide:nth-child(4) {
-    background-image: url("../../../assets/img/services_4_mob.png");
   }
   .services-slider__left-part {
     display: flex;
@@ -1935,7 +1927,6 @@ img {
 }
 .reviews__button-prev, .reviews__button-next {
   background-color: #fff;
-  background-image: url("../../../assets/img/icons/arrow-left-wh.svg");
 }
 .reviews__slide {
   height: unset !important;
@@ -2519,6 +2510,13 @@ img {
   font-size: 14px;
   line-height: 15px;
   color: #FFFFFF;
+}
+
+.footer-contacts__phone > a,
+.footer-contacts__email > a {
+  display: flex;
+  flex-direction: row;
+  gap: 31px;
 }
 
 .footer-social {

@@ -1,19 +1,14 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html <?php language_attributes(); ?>>
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
     <title>Порошковая окраска и пескоструйная очистка в Москве</title>
     <meta name="description" content="Порошковая окраска и пескоструйная отчистка в Москве. Высокое качество, быстрое выполнение работ и индивидуальный подход к каждому клиенту. Закажите услуги прямо сейчас!"/>
     <meta name="robots" content="index, follow"/>
     
     <?php wp_head(); ?>
-
-    <!-- <link rel="stylesheet" href="css/style.css?v=80">
-    <link rel="stylesheet" href="assets/fonts/stylesheet.css?v=4">
-    <link href="favicon.ico" rel="icon" type="image/x-icon" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">-->
     
 
 </head>
@@ -26,7 +21,7 @@
     <header class="header" id="primary-website-header">
         <div class="header__main container">
             <a href="" class="header__logo">
-                <img src="assets/img/icons/logo.svg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/logo.svg" alt="">
                 <p class="mob-hidden">Цех порошковой окраски<br>и пескоструйной очистки</p>
             </a>
             <div class="header__contacts">
@@ -42,7 +37,7 @@
                     <button class="btn-grey mob-hidden form-trig-btn">Записаться</button>
                     <button class="btn-green form-trig-btn">Заказать звонок</button>
                     <div class="nav-burger tablet-desc-hidden">
-                        <img src="assets/img/icons/menu-cross.svg" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/menu-cross.svg" alt="">
                     </div>
                 </div>
             </div>
@@ -52,11 +47,11 @@
         <div id="nav" class="nav container">
             <div class="nav__header">
                 <a href="tel:+7 495 748 98 38" class="header__tel tablet-desc-hidden">
-                    <img src="assets/img/icons/phone-header.svg" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/phone-header.svg" alt="">
                     <p class="">+7 495 748 98 38</p>
                 </a>
                 <div class="burger-cross tablet-desc-hidden">
-                    <img src="assets/img/icons/menu-cross-cross.svg" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/menu-cross-cross.svg" alt="">
                 </div>
             </div>
             <div class="nav__body nav__items">

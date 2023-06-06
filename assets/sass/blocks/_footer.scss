@@ -56,6 +56,13 @@
         color: #FFFFFF;
     }
 }
+.footer-contacts__phone > a,
+.footer-contacts__email > a {
+    display: flex;
+    flex-direction: row;
+    gap: 31px;
+}
+
 .footer-social {
     display: flex;
     flex-direction: row;
